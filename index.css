@@ -182,36 +182,50 @@ nav {
     padding: 100px 0;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.about-text p {
-    margin-bottom: 20px;
-    color: var(--text-gray);
-    font-size: 1.1rem;
+.about-text-full p {
+    font-size: 1.2rem;
+    color: var(--text-white);
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.about-stats {
+.focus-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.stat-card {
-    background: var(--bg-card);
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
+.focus-item {
+    background: rgba(212, 175, 55, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
     border: 1px solid rgba(212, 175, 55, 0.1);
+    transition: all 0.3s ease;
 }
 
-.stat-card h3 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.focus-item:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: var(--primary-gold);
+    transform: translateX(10px);
+}
+
+.focus-icon {
+    font-size: 1.5rem;
+}
+
+.focus-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-gray);
+    text-align: left;
 }
 
 /* Services Section */
