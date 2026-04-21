@@ -776,6 +776,36 @@ footer p {
     }
 }
 
+@media (min-width: 993px) {
+    .subsidiary-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.upcoming {
+    border: 1px dashed var(--primary-gold) !important;
+    opacity: 0.9;
+}
+
+.expansion-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gold-gradient);
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.expansion-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
 @media (max-width: 768px) {
     .highlight-image-box {
         height: 300px;
