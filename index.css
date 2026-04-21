@@ -540,22 +540,43 @@ footer p {
     background: rgba(212, 175, 55, 0.05);
 }
 
-.highlight-item .icon {
-    font-size: 1.8rem;
+.highlight-item .icon-box {
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--gold-gradient);
-    border-radius: 50%;
+    border-radius: 12px;
     color: #000;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.highlight-item svg {
+    width: 24px;
+    height: 24px;
+    stroke: #000;
 }
 
 .highlight-item h3 {
     font-size: 1.1rem;
     color: var(--text-white);
     margin: 0;
+    font-weight: 600;
+}
+
+/* Pixel Fix Overlay */
+.overlay-img {
+    filter: brightness(0.6) contrast(1.2);
+}
+
+.highlight-image-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(10,10,10,0.2), rgba(10,10,10,0.8));
+    pointer-events: none;
 }
 
 @media (max-width: 768px) {
