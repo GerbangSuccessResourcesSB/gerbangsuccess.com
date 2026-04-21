@@ -644,9 +644,18 @@ footer p {
     background: var(--gold-gradient);
 }
 
-.card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.focus-svg, .card-icon svg, .expansion-icon svg {
+    color: var(--primary-gold);
+    stroke: var(--primary-gold);
+}
+
+.focus-svg {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .strategy-card h3 {
